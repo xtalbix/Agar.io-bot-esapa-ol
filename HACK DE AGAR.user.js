@@ -817,7 +817,7 @@ console.log("Running Bot Launcher!");
 
         var displayText = 'PUNTUACION: ' + ~~(R / 100) + " tiempo de juego: " + nbSeconds + " segundos.";
 
-        0 != R && (null == ua && (ua = new va(24, "#ff0000")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
+        0 != R && (null == ua && (ua = new va(24, "#FFFFFF")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
             10 - 24 - 5));
         Cb();
         b = Date.now() - b;
@@ -825,7 +825,7 @@ console.log("Running Bot Launcher!");
         1 < D && (D = 1);
         b = C - ib;
         !T() || W ? (x += b / 2E3, 1 < x && (x = 1)) : (x -= b / 300, 0 > x && (x = 0));
-        0 < x && (f.fillStyle = "#00ffc3", f.globalAlpha = .5 * x, f.fillRect(0, 0, m, r), f.globalAlpha = 1);
+        0 < x && (f.fillStyle = "#000000", f.globalAlpha = .5 * x, f.fillRect(0, 0, m, r), f.globalAlpha = 1);
         ib = C
 
         drawStats(f);
