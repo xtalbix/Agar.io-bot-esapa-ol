@@ -380,7 +380,7 @@ console.log("Running Bot Launcher!");
         q.onmessage = ub;
         q.onclose = vb;
         q.onerror = function() {
-            console.log("Error de socket")
+            console.log("socket error")
         }
     }
 
@@ -394,7 +394,7 @@ console.log("Running Bot Launcher!");
 
     function vb() {
         $ && (ma = 500);
-        console.log("Cierre de socket");
+        console.log("socket close");
         setTimeout(I, ma);
         ma *= 2
     }
@@ -817,7 +817,7 @@ console.log("Running Bot Launcher!");
 
         var displayText = 'PUNTUACION: ' + ~~(R / 100) + " tiempo de juego: " + nbSeconds + " segundos.";
 
-        0 != R && (null == ua && (ua = new va(24, "#ffff00")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
+        0 != R && (null == ua && (ua = new va(24, "#FFFFFF")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
             10 - 24 - 5));
         Cb();
         b = Date.now() - b;
@@ -979,19 +979,19 @@ console.log("Running Bot Launcher!");
         var debugStrings = [];
         debugStrings.push("ROBOT ACTUAL: " + window.botList[botIndex][0]);
         debugStrings.push("T - ROBOT: " + (!toggle ? "encendido" : "apagado"));
-        debugStrings.push("R - RADAR: " + (!toggleDraw ? "encendido" : "apagado"));
-        debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO estas SIGUIENDO"));
+        debugStrings.push("R - RAYAS: " + (!toggleDraw ? "encendido" : "apagado"));
+        debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO SIGUIENDO"));
         debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "ninguno" : selectedCell) + " de " + getPlayer().length);
         debugStrings.push("");
-        debugStrings.push("Mejor puntuación: " + ~~(sessionScore / 100));
-        debugStrings.push("RATO JUGANDO: " + bestTime + " SEGUNDOS");
+        debugStrings.push("Mejor puntuaciÃ³n: " + ~~(sessionScore / 100));
+        debugStrings.push("RATO JUGANDO: " + bestTime + " seconds");
         debugStrings.push("");
         debugStrings.push(serverIP);
 
         if (getPlayer().length > 0) {
             var offsetX = -getMapStartX();
             var offsetY = -getMapStartY();
-            debugStrings.push("Localización: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
+            debugStrings.push("LocalizaciÃ³n: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
         }
 
         var offsetValue = 20;
@@ -1080,7 +1080,7 @@ console.log("Running Bot Launcher!");
                     1;
                 a.fillStyle = "#FFFFFF";
                 c = null;
-                c = Z("Clasificación");
+                c = Z("ClasificaciÃ³n");
                 a.font = "30px Ubuntu";
                 a.fillText(c, 100 - a.measureText(c).width / 2, 40);
                 if (null == A)
@@ -1352,7 +1352,7 @@ console.log("Running Bot Launcher!");
                 na = 0,
                 oa = 0,
                 mb = 0,
-                Db = ["#00ff18", "#00ff18", "#00ff18", "#00ff18"],
+                Db = ["#333333", "#FF3333", "#33FF33", "#3333FF"],
                 Ia = !1,
                 $ = !1,
                 bb = 0,
@@ -1839,7 +1839,7 @@ console.log("Running Bot Launcher!");
                         }
                     }(),
                     U = {},
-                    ob = ";poland;usa;china;russia;canada;australia;spain;brazil;germany;ukraine;france;sweden;chaplin;north korea;south korea;japan;united kingdom;earth;greece;latvia;lithuania;estonia;finland;norway;cia;maldivas;austria;nigeria;reddit;yaranaika;confederate;9gag;indiana;4chan;italy;bulgaria;tumblr;2ch.hk;hong kong;portugal;jamaica;german empire;mexico;sanik;switzerland;croatia;chile;indonesia;bangladesh;thailand;iran;iraq;peru;moon;botswana;bosnia;netherlands;european union;taiwan;pakistan;hungary;satanist;qing dynasty;matriarchy;patriarchy;feminism;ireland;texas;facepunch;prodota;cambodia;steam;piccolo;ea;india;kc;denmark;quebec;ayy lmao;sealand;bait;tsarist russia;origin;vinesauce;stalin;belgium;luxembourg;stussy;prussia;8ch;argentina;scotland;sir;romania;belarus;wojak;doge;nasa;byzantium;imperial japan;french kingdom;somalia;turkey;mars;pokerface;8;irs;Obama;Fidel;Merkel;Tsipras;Putin;Hollande;Dilma;Kim Jong-Un;receita federal;facebook".split(";"),
+                    ob = ";poland;usa;china;russia;canada;australia;spain;brazil;germany;ukraine;france;sweden;chaplin;north korea;south korea;japan;united kingdom;earth;greece;latvia;lithuania;estonia;finland;norway;cia;maldivas;austria;nigeria;reddit;yaranaika;confederate;9gag;indiana;4chan;italy;bulgaria;tumblr;2ch.hk;hong kong;portugal;jamaica;german empire;mexico;sanik;switzerland;croatia;chile;indonesia;bangladesh;thailand;iran;iraq;peru;moon;botswana;bosnia;netherlands;european union;taiwan;pakistan;hungary;satanist;qing dynasty;matriarchy;patriarchy;feminism;ireland;texas;facepunch;prodota;cambodia;steam;piccolo;ea;india;kc;denmark;quebec;ayy lmao;sealand;bait;tsarist russia;origin;vinesauce;stalin;belgium;luxembourg;stussy;prussia;8ch;argentina;scotland;sir;romania;belarus;wojak;doge;nasa;byzantium;imperial japan;french kingdom;somalia;turkey;mars;pokerface;8;irs;receita federal;facebook".split(";"),
                     Gb = ["8", "nasa"],
                     Hb = ["m'blob"];
                 Ka.prototype = {
