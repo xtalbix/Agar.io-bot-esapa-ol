@@ -982,8 +982,7 @@ console.log("Running Bot Launcher!");
         debugStrings.push("R - RAYAS: " + (!toggleDraw ? "ENCENDIDO" : "APAGADO"));
         debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO SIGUIENDO"));
         debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "NINGUNO" : selectedCell) + " DE " + getPlayer().length);
-        debugStrings.push("D - CAMBIO DE TEMA:
-		debugStrings.push("ECHO POR APOSTOLIQUE");
+        debugStrings.push("ECHO POR APOSTOLIQUE");
         debugStrings.push("MEJOR PUNTUACION: " + ~~(sessionScore / 100));
         debugStrings.push("RATO JUGANDO: " + bestTime + " SEGUNDOS");
         debugStrings.push("TRADUCIDO POR XTALBIX");
