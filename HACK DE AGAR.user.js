@@ -75,10 +75,11 @@ console.log("Running Bot Launcher!");
             console.log("Next Cell " + selectedCell);
         }
         if (68 == e.keyCode) {
-            window.setDarkTheme(!getDarkBool());
+            window.setDarkTheme(!toggleDraw());
         }
         if (70 == e.keyCode) {
-            window.setShowMass(!getMassBool());
+            window.setShowMass(!toggleDraw
+			toggleDraw = !toggleDraw;
         }
         if (69 == e.keyCode) {
             if (message.length > 0) {
@@ -978,14 +979,15 @@ console.log("Running Bot Launcher!");
 
         var debugStrings = [];
         debugStrings.push("ROBOT ACTUAL: " + window.botList[botIndex][0]);
-        debugStrings.push("T - ROBOT: " + (!toggle ? "encendido" : "apagado"));
-        debugStrings.push("R - RAYAS: " + (!toggleDraw ? "encendido" : "apagado"));
+        debugStrings.push("T - ROBOT: " + (!toggle ? "ENCENDIDO" : "APAGADO"));
+        debugStrings.push("R - RAYAS: " + (!toggleDraw ? "ENCENDIDO" : "APAGADO"));
         debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO SIGUIENDO"));
-        debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "ninguno" : selectedCell) + " de " + getPlayer().length);
-        debugStrings.push("");
-        debugStrings.push("Mejor puntuaciÃ³n: " + ~~(sessionScore / 100));
-        debugStrings.push("RATO JUGANDO: " + bestTime + " seconds");
-        debugStrings.push("");
+        debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "NINGUNO" : selectedCell) + " DE " + getPlayer().length);
+        debugStrings.push("D - CAMBIO DE TEMA: +(!toggle ? "ENCENDIDO" : "APAGADO"));
+		debugStrings.push("ECHO POR APOSTOLIQUE");
+        debugStrings.push("MEJOR PUNTUACION: " + ~~(sessionScore / 100));
+        debugStrings.push("RATO JUGANDO: " + bestTime + " SEGUNDOS");
+        debugStrings.push("TRADUCIDO POR XTALBIX");
         debugStrings.push(serverIP);
 
         if (getPlayer().length > 0) {
