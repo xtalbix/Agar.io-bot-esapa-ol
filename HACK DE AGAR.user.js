@@ -75,11 +75,10 @@ console.log("Running Bot Launcher!");
             console.log("Next Cell " + selectedCell);
         }
         if (68 == e.keyCode) {
-            window.setDarkTheme(!toggleDraw());
+            window.setDarkTheme(!getDarkBool());
         }
         if (70 == e.keyCode) {
-            window.setShowMass(!toggleDraw
-			toggleDraw = !toggleDraw;
+            window.setShowMass(!getMassBool());
         }
         if (69 == e.keyCode) {
             if (message.length > 0) {
@@ -983,7 +982,7 @@ console.log("Running Bot Launcher!");
         debugStrings.push("R - RAYAS: " + (!toggleDraw ? "ENCENDIDO" : "APAGADO"));
         debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO SIGUIENDO"));
         debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "NINGUNO" : selectedCell) + " DE " + getPlayer().length);
-        debugStrings.push("D - CAMBIO DE TEMA: +(!toggle ? "ENCENDIDO" : "APAGADO"));
+        debugStrings.push("D - CAMBIO DE TEMA:
 		debugStrings.push("ECHO POR APOSTOLIQUE");
         debugStrings.push("MEJOR PUNTUACION: " + ~~(sessionScore / 100));
         debugStrings.push("RATO JUGANDO: " + bestTime + " SEGUNDOS");
