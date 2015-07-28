@@ -982,10 +982,10 @@ console.log("Running Bot Launcher!");
         debugStrings.push("R - RAYAS: " + (!toggleDraw ? "ENCENDIDO" : "APAGADO"));
         debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO SIGUIENDO"));
         debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "NINGUNO" : selectedCell) + " DE " + getPlayer().length);
-        
-		debugStrings.push("echo por APOSTOLIQUE");
+        debugStrings.push("");
+		debugStrings.push("ECHO POR APOSTOLIQUE");
         debugStrings.push("TRADUCIDO POR XTALBIX");
-		
+		debugStrings.push("");
 		debugStrings.push("MEJOR PUNTUACION: " + ~~(sessionScore / 100));
         debugStrings.push("RATO JUGANDO: " + bestTime + " SEGUNDOS");        
         debugStrings.push(serverIP);
@@ -993,7 +993,7 @@ console.log("Running Bot Launcher!");
         if (getPlayer().length > 0) {
             var offsetX = -getMapStartX();
             var offsetY = -getMapStartY();
-            debugStrings.push("LocalizaciÃ³n: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
+            debugStrings.push("Localizacion: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
         }
 
         var offsetValue = 20;
@@ -1012,7 +1012,7 @@ console.log("Running Bot Launcher!");
             var mHeight = 0;
 
             for (var i = 0; i < message.length; i++) {
-                var mText = new va(28, '#00ffff', true, '#000000');
+                var mText = new va(28, '#FF0000', true, '#000000');
                 mText.C(message[i]);
                 mRender.push(mText.L());
 
@@ -1082,7 +1082,7 @@ console.log("Running Bot Launcher!");
                     1;
                 a.fillStyle = "#FFFFFF";
                 c = null;
-                c = Z("ClasificaciÃ³n");
+                c = Z("Clasificacion");
                 a.font = "30px Ubuntu";
                 a.fillText(c, 100 - a.measureText(c).width / 2, 40);
                 if (null == A)
@@ -2203,7 +2203,7 @@ console.log("Running Bot Launcher!");
                         }
                     },
                     db = function() {
-                        var a = new da(0, 0, 0, 32, "#00ffff", ""),
+                        var a = new da(0, 0, 0, 32, "#ED1C24", ""),
                             b = document.createElement("canvas");
                         b.width = 32;
                         b.height = 32;
