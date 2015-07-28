@@ -30,7 +30,7 @@ function getLatestCommit() {
 
             function update(prefix, name, url) {
                 window.jQuery(document.body).prepend("<div id='" + prefix + "Dialog' style='position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 100; display: none;'>");
-                window.jQuery('#' + prefix + 'Dialog').append("<div id='" + prefix + "Message' style='width: 350px; background-color: #ff00ee; margin: 100px auto; border-radius: 15px; padding: 5px 15px 5px 15px;'>");
+                window.jQuery('#' + prefix + 'Dialog').append("<div id='" + prefix + "Message' style='width: 350px; background-color: #FFFFFF; margin: 100px auto; border-radius: 15px; padding: 5px 15px 5px 15px;'>");
                 window.jQuery('#' + prefix + 'Message').append("<h2>UPDATE TIME!!!</h2>");
                 window.jQuery('#' + prefix + 'Message').append("<p>Grab the update for: <a id='" + prefix + "Link' href='" + url + "' target=\"_blank\">" + name + "</a></p>");
                 window.jQuery('#' + prefix + 'Link').on('click', function() {
@@ -126,7 +126,7 @@ console.log("Running Bot Launcher!");
             var bList = window.jQuery('#bList');
             window.jQuery('<option />', {
                 value: (window.botList.length - 1),
-                text: "Human"
+                text: "HUMANO"
             }).appendTo(bList);
         }
 
@@ -817,7 +817,7 @@ console.log("Running Bot Launcher!");
 
         var displayText = 'PUNTUACION: ' + ~~(R / 100) + " tiempo de juego: " + nbSeconds + " segundos.";
 
-        0 != R && (null == ua && (ua = new va(24, "#FFFFFF")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
+        0 != R && (null == ua && (ua = new va(24, "#ff0000")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
             10 - 24 - 5));
         Cb();
         b = Date.now() - b;
@@ -982,10 +982,12 @@ console.log("Running Bot Launcher!");
         debugStrings.push("R - RAYAS: " + (!toggleDraw ? "ENCENDIDO" : "APAGADO"));
         debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO SIGUIENDO"));
         debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "NINGUNO" : selectedCell) + " DE " + getPlayer().length);
-        debugStrings.push("ECHO POR APOSTOLIQUE");
-        debugStrings.push("MEJOR PUNTUACION: " + ~~(sessionScore / 100));
-        debugStrings.push("RATO JUGANDO: " + bestTime + " SEGUNDOS");
+        
+		debugStrings.push("echo por APOSTOLIQUE");
         debugStrings.push("TRADUCIDO POR XTALBIX");
+		
+		debugStrings.push("MEJOR PUNTUACION: " + ~~(sessionScore / 100));
+        debugStrings.push("RATO JUGANDO: " + bestTime + " SEGUNDOS");        
         debugStrings.push(serverIP);
 
         if (getPlayer().length > 0) {
@@ -1010,7 +1012,7 @@ console.log("Running Bot Launcher!");
             var mHeight = 0;
 
             for (var i = 0; i < message.length; i++) {
-                var mText = new va(28, '#FF0000', true, '#000000');
+                var mText = new va(28, '#00ffff', true, '#000000');
                 mText.C(message[i]);
                 mRender.push(mText.L());
 
@@ -2201,7 +2203,7 @@ console.log("Running Bot Launcher!");
                         }
                     },
                     db = function() {
-                        var a = new da(0, 0, 0, 32, "#ED1C24", ""),
+                        var a = new da(0, 0, 0, 32, "#00ffff", ""),
                             b = document.createElement("canvas");
                         b.width = 32;
                         b.height = 32;
