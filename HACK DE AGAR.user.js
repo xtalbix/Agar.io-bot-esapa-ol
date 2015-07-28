@@ -817,7 +817,7 @@ console.log("Running Bot Launcher!");
 
         var displayText = 'PUNTUACION: ' + ~~(R / 100) + " tiempo de juego: " + nbSeconds + " segundos.";
 
-        0 != R && (null == ua && (ua = new va(24, "#ff0000")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#00ff18", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
+        0 != R && (null == ua && (ua = new va(24, "#ffe900")), ua.C(displayText), c = ua.L(), a = c.width, f.globalAlpha = .2, f.fillStyle = "#000000", f.fillRect(10, r - 10 - 24 - 10, a + 10, 34), f.globalAlpha = 1, f.drawImage(c, 15, r -
             10 - 24 - 5));
         Cb();
         b = Date.now() - b;
@@ -978,7 +978,7 @@ console.log("Running Bot Launcher!");
 
         var debugStrings = [];
         debugStrings.push("ROBOT ACTUAL: " + window.botList[botIndex][0]);
-        debugStrings.push("T - ROBOT: " + (!toggle ? "encendido" : "apagado"));
+        debugStrings.push("T - ROBOT: " + (!toggle ? " # 000000 " : "encendido" : "apagado"));
         debugStrings.push("R - RAYAS: " + (!toggleDraw ? "encendido" : "apagado"));
         debugStrings.push("Q - SEGUIR RATON: " + (toggleFollow ? "SIGUENDO" : "NO SIGUIENDO"));
         debugStrings.push("S - CELULA MANUAL: " + (selectedCell == 0 ? "ninguno" : selectedCell) + " de " + getPlayer().length);
