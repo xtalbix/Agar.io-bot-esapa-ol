@@ -30,7 +30,7 @@ function getLatestCommit() {
 
             function update(prefix, name, url) {
                 window.jQuery(document.body).prepend("<div id='" + prefix + "Dialog' style='position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 100; display: none;'>");
-                window.jQuery('#' + prefix + 'Dialog').append("<div id='" + prefix + "Message' style='width: 350px; background-color: #FFFFFF; margin: 100px auto; border-radius: 15px; padding: 5px 15px 5px 15px;'>");
+                window.jQuery('#' + prefix + 'Dialog').append("<div id='" + prefix + "Message' style='width: 350px; background-color: #ff00ee; margin: 100px auto; border-radius: 15px; padding: 5px 15px 5px 15px;'>");
                 window.jQuery('#' + prefix + 'Message').append("<h2>UPDATE TIME!!!</h2>");
                 window.jQuery('#' + prefix + 'Message').append("<p>Grab the update for: <a id='" + prefix + "Link' href='" + url + "' target=\"_blank\">" + name + "</a></p>");
                 window.jQuery('#' + prefix + 'Link').on('click', function() {
