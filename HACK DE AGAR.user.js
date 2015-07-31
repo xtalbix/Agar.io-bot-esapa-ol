@@ -126,7 +126,7 @@ console.log("Running Bot Launcher!");
             var bList = window.jQuery('#bList');
             window.jQuery('<option />', {
                 value: (window.botList.length - 1),
-                text: "HUMANO"
+                text: "Human"
             }).appendTo(bList);
         }
 
@@ -993,7 +993,7 @@ console.log("Running Bot Launcher!");
         if (getPlayer().length > 0) {
             var offsetX = -getMapStartX();
             var offsetY = -getMapStartY();
-            debugStrings.push("Localizacion: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
+            debugStrings.push("Location: " + Math.floor(getPlayer()[0].x + offsetX) + ", " + Math.floor(getPlayer()[0].y + offsetY));
         }
 
         var offsetValue = 20;
@@ -2008,7 +2008,7 @@ console.log("Running Bot Launcher!");
                             }
                             a.closePath();
                             d = this.name.toLowerCase();
-                            !this.n && kb && ":teams" != P ? -1 != ob.indexOf(d) ? (U.hasOwnProperty(d) || (U[d] = new Image, (d == "jXFGr1R" ? U[d].src = "http://i.imgur.com/jXFGr1R.png" : U[d].src = "skins/" +
+                            !this.n && kb && ":teams" != P ? -1 != ob.indexOf(d) ? (U.hasOwnProperty(d) || (U[d] = new Image, (d == "" ? U[d].src = .png" : U[d].src = "skins/" +
                                 d + ".png")), c = 0 != U[d].width && U[d].complete ? U[d] : null) : c = null : c = null;
                             c = (e = c) ? -1 != Hb.indexOf(d) : !1;
                             b || a.stroke();
